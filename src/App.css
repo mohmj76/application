@@ -1,33 +1,170 @@
 .App {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  background-color: rgb(227, 227, 241)
+}
+
+.link {
+  text-decoration: none;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.my-input {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px 39.5px;
+  width:200px;
+  border: 1px solid #cecccc;
+  border-radius: 7px;
+}
+
+.my-input1 {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px 39.5px;
+  width:800px;
+  border: 1px solid #cecccc;
+  border-radius: 7px;
+}
+
+.submit {
+  display: block;
+  width: 200px;
+  margin: 20px 50px;
+  padding: 5px 0;
+  background-color: rgb(139, 20, 20);
+  color: white;
+  border: 1px solid;
+  border-radius: 7px;
+}
+.d1 {
+  border: 1px solid rgb(94, 91, 91);
+  width: 31vw;
+  display: inline-block;
+}
+
+.d2 {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #000;
+  width: 69vw;
+  display: inline-block;
+}
+.conv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid gray;
+  margin-top: 100px;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-grow: 1;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 4;
+}
+
+.inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.messengerscreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.screen {
+  flex-grow: 25;
+  background-color: #272829;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #741717;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background-color: #741717;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message {
+  background-color: rgb(68, 68, 71);
+  color: #fff;
+  padding: 2px 10px;
+  margin: 2px;
+  border-radius: 0 10px 0 0;
+}
+.sender {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.search {
+  border: 1px solid #817979;
+  padding: 5px;
+  margin: 5px;
+  width:400px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #d1d0d0;
+}
+
+.suggest {
+  font-size: 10px;
+  margin: 0;
+  padding: 5px 15px;
+  border-bottom: 1px solid red;
+}
+
+.suggestedAvatar {
+  width: 15px;
+  border-radius: 7.5px
 }
